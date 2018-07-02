@@ -70,6 +70,7 @@
 }
 
 footer {
+	@include linear-gradient(to bottom right, $dark-blue, $light-blue);
 	padding: 125px 0 200px 0;
 	background: $light-blue;
 
