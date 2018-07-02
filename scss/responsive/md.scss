@@ -1,0 +1,15 @@
+@include breakpoint(md) {
+	.header .container-title {
+		.lastname {
+			font-size: 80px;
+		}
+
+		.firstname {
+			font-size: 60px;
+		}
+	}
+
+	.project {
+		width: 80%;
+	}
+}

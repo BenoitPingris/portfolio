@@ -1,0 +1,98 @@
+.header {
+	@include linear-gradient(to bottom right, $dark-blue, $light-blue);
+
+	position: relative;
+	color: $white;
+	text-align: center;
+	// background: $light-blue;
+	height: 100vh;
+	width: 100vw;
+	display: table-cell;
+	vertical-align: middle;
+
+	.container-title {
+		margin: auto;
+		display: inline-block;
+		text-align-last: left;
+		position: relative;
+		z-index: 2;
+
+		.lastname {
+			text-transform: uppercase;
+			font-family: 'Oswald-regular';
+			font-size: 100px;
+		}
+
+		.firstname {
+			font-family: 'Raleway-regular';
+			font-size: 70px;
+		}
+
+		.status {
+			padding: 10px 0;
+			font-family: 'Oswald-regular';
+			text-transform: uppercase;
+			font-size: 25px;
+			margin-left: 2px;
+		}
+	}
+
+	.social-network {
+		position: absolute;
+		left: 30px;
+		width: auto;
+		z-index: 2;
+
+		.item-social {
+			display: block;
+
+			i {
+				padding: 0 5px;
+				font-size: 35px;
+				color: $cold-purple;
+				transition: 0.1s linear;
+
+				&:hover {
+					color: $white;
+					transition: 0.1s linear;
+				}
+			}
+		}
+	}
+}
+
+.diagonal-shape {
+	width: 100%;
+	height: 300px;
+	background: white;
+	transform: skewY(-3deg);
+	margin-top: -100px;
+}
+
+footer {
+	padding: 125px 0 200px 0;
+	background: $light-blue;
+
+	.info-title {
+		color: $white;
+		font-family: 'Raleway-regular';
+		font-size: 22px;
+	}
+}
+
+.title-part {
+	font-family: 'Raleway-regular';
+	font-size: 40px;
+}
+
+.projects-list {
+	padding: 100px 0;
+}
+
+.project {
+	padding: 50px 0;
+	border: 1px solid $dark-blue;
+	border-radius: 2px;
+	width: 60%;
+	margin: 50px auto;
+}

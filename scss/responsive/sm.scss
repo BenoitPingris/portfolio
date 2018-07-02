@@ -1,0 +1,13 @@
+@include breakpoint(sm) {
+	.header .social-network {
+		position: unset;
+		margin-bottom: 10px;
+
+		.item-social {
+			display: inline-block;
+		}
+	}
+	.project {
+		width: 90%;
+	}
+}
