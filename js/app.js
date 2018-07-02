@@ -33,4 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	const scene = new Scene();
 	scene.setup();
 	scene.display();
+
+	const modals = document.getElementsByClassName('active-modal');
+	for (let modal of modals) {
+		modal.addEventListener('click', () => {
+			document.getElementById('modal-id').classList.toggle('active');
+		});
+	}
 });

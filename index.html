@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Benoit Pingris</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	    crossorigin="anonymous">
 	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
@@ -39,6 +40,9 @@
 				<div class="status">Front-End developper - Paris</div>
 			</div>
 		</div>
+		<div class="contact-me active-modal cursor-pointer">
+				<span>Contacter moi</span>
+			</div>
 	</header>
 	<!-- <div class="diagonal-shape"></div> -->
 	<div class="projects-list">
@@ -61,13 +65,17 @@
 				<div class="column col-sm-12 col-6 text-center">
 					<span class="info-title">Coordonnées</span>
 					<ul class="details">
-						<li><i class="fas fa-phone"></i>&nbsp;&nbsp;06.79.07.68.74</li>
-						<li><i class="fas fa-envelope"></i>&nbsp;&nbsp;benoit.pingris665@gmail.com</li>
+						<li>
+							<i class="fas fa-phone"></i>&nbsp;&nbsp;06.79.07.68.74</li>
+						<li>
+							<i class="fas fa-envelope"></i>&nbsp;&nbsp;benoit.pingris665@gmail.com</li>
 					</ul>
 				</div>
 				<div class="column col-sm-12 col-6 text-center">
 					<span class="info-title">Contact</span>
-					<div class="div"><a href="contact-me">Me contacter</a></div>
+					<div class="contact-container">
+						<span class="active-modal cursor-pointer color-white">Me contacter</span>
+					</div>
 				</div>
 			</div>
 			<div class="copyright text-center color-white">
@@ -79,6 +87,25 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal" id="modal-id">
+		<a href="#close" class="modal-overlay active-modal" aria-label="Close"></a>
+		<div class="modal-container">
+			<div class="modal-header">
+				<a href="#close" class="btn btn-clear float-right active-modal" aria-label="Close"></a>
+				<div class="modal-title h5">Modal title</div>
+			</div>
+			<div class="modal-body">
+				<div class="content">
+					hey
+					<!-- content here -->
+				</div>
+			</div>
+			<div class="modal-footer">
+				...
+			</div>
+		</div>
+	</div>
 </body>
 <script src="./js/app.js" type="module"></script>
+
 </html>

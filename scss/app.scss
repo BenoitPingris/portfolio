@@ -16,6 +16,9 @@
 		text-align-last: left;
 		position: relative;
 		z-index: 2;
+		background: rgba($color: $dark, $alpha: 0.5);
+		padding: 20px 50px 50px 20px;
+		border-radius: 1px;
 
 		.lastname {
 			text-transform: uppercase;
@@ -30,7 +33,7 @@
 
 		.status {
 			padding: 10px 0;
-			font-family: 'Oswald-regular';
+			font-family: 'Raleway-regular';
 			text-transform: uppercase;
 			font-size: 25px;
 			margin-left: 2px;
@@ -45,7 +48,13 @@
 
 		.item-social {
 			display: block;
-
+			margin-top: 10px;
+			margin-bottom: 10px;
+			transition: .6s ease-in-out;
+			&:hover {
+				transform: rotate(360deg);
+				padding: 10px;
+			}
 			i {
 				padding: 0 5px;
 				font-size: 35px;
@@ -95,6 +104,10 @@ footer {
 	border-radius: 2px;
 	width: 60%;
 	margin: 50px auto;
+	transition: transform 0.2s ease;
+	// &:hover {
+	// 	transform: rotate3d(1, 0, 0, 10deg);
+	// }
 }
 
 .details {
@@ -108,4 +121,24 @@ footer {
 .copyright {
 	margin-top: 50px;
 	font-family: 'Open-regular';
+}
+
+.contact-container {
+	.active-modal {
+		font-family: 'Open-italic';
+	}
+	margin-top: 10px;
+}
+
+.contact-me {
+	font-family: 'Oswald-regular';
+	position: relative;
+	top: 20px;
+	font-size: 25px;
+	margin-left: 2px;
+	margin-top: 10px;
+	display: inline-block;
+	padding: 10px 50px;
+	border: 1px solid $cold-purple;
+	border-radius: 1px;
 }

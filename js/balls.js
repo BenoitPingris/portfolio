@@ -49,7 +49,6 @@ export class Scene {
 		};
 
 		this.max_balls = Math.floor(dim.width / 50);
-		console.log(this.max_balls);
 		this.balls = new Array(this.max_balls);
 		this.canvas = document.getElementById('scene');
 		this.context = this.canvas.getContext('2d');
