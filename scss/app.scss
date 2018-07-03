@@ -50,9 +50,9 @@
 			display: block;
 			margin-top: 10px;
 			margin-bottom: 10px;
-			transition: .6s ease-in-out;
+			transition: .3s ease-in-out;
 			&:hover {
-				transform: rotate(360deg);
+				transform: rotate(45deg);
 				padding: 10px;
 			}
 			i {
@@ -141,4 +141,8 @@ footer {
 	padding: 10px 50px;
 	border: 1px solid $cold-purple;
 	border-radius: 1px;
+}
+
+#honeypot {
+	display: none; /*makes the field not visible to humans*/
 }

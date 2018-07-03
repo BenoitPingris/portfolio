@@ -96,8 +96,16 @@
 			</div>
 			<div class="modal-body">
 				<div class="content">
-					hey
-					<!-- content here -->
+					<form id="gform" action="https://script.google.com/macros/s/AKfycbzxAZ2QsQd7UwS61LMMeviEEhzGQnC19HdTG7lb50lOXcmIA8M/exec" method="POST">
+						<label class="sr-only">Keep this field blank</label>
+  						<input id="honeypot" type="text" name="honeypot" value="" />
+						<input type="email" name="email" placeholder="Email">
+						<textarea name="message" placeholder="Message"></textarea>
+						<button type="submit">Envoyer</button>
+					</form>
+					<div id="thankyou_message" style="display: none;">
+						<h2><em>Thanks</em> for contacting us ! We will contact you soon mdr</h2>
+					</div>
 				</div>
 			</div>
 			<div class="modal-footer">
@@ -105,7 +113,9 @@
 			</div>
 		</div>
 	</div>
+	<!-- <div style="display: none;" id="thankyou_message">salut toi</div> -->
+	<script src="./js/app.js" type="module"></script>
+	<script data-cfasync="false" type="text/javascript" src="./js/form-submission-handler.min.js"></script>
 </body>
-<script src="./js/app.js" type="module"></script>
 
 </html>

@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	scene.display();
 
 	const modals = document.getElementsByClassName('active-modal');
-	for (let modal of modals) {
+	for (const modal of modals) {
 		modal.addEventListener('click', () => {
 			document.getElementById('modal-id').classList.toggle('active');
 		});
