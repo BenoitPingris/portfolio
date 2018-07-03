@@ -45,7 +45,13 @@
 		left: 30px;
 		width: auto;
 		z-index: 2;
-
+		transition: 0.3s ease-in-out;
+		&:hover {
+			padding: 15px;
+			.item-social i {
+				font-size: 40px;
+			}
+		}
 		.item-social {
 			display: block;
 			margin-top: 10px;
@@ -53,7 +59,6 @@
 			transition: .3s ease-in-out;
 			&:hover {
 				transform: rotate(45deg);
-				padding: 10px;
 			}
 			i {
 				padding: 0 5px;
@@ -145,4 +150,60 @@ footer {
 
 #honeypot {
 	display: none; /*makes the field not visible to humans*/
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#gform {
+	font-family: 'Raleway-regular';
+	text-align: center;
+
+	.submit-btn {
+		// background: $cold-purple;
+		border: 1px solid $cold-purple;
+		border-radius: 1px;
+		display: inline-block;
+		color: $dark-blue;
+		width: unset;
+		cursor: pointer;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin: 10px;
+		font-size: 20px;
+	}
+	.form-input {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+.modal-container {
+	padding: 0;
+}
+
+.custom-modal-header {
+	@include linear-gradient(to bottom right, $dark-blue, $light-blue);
+	color: white;
+	width: 100%;
+}
+
+.custom-modal-footer {
+	@include linear-gradient(to top left, $dark-blue, $light-blue);
+	padding: 100px 0;
+}
+
+.modal-container .custom-modal-body {
+	padding: 20px;
 }
