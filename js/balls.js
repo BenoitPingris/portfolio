@@ -48,7 +48,7 @@ export class Scene {
 			height: header.offsetHeight
 		};
 
-		this.max_balls = Math.floor(dim.width / 50);
+		this.max_balls = Math.floor(dim.width / 40);
 		this.balls = new Array(this.max_balls);
 		this.canvas = document.getElementById('scene');
 		this.context = this.canvas.getContext('2d');

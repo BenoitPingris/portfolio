@@ -9,13 +9,14 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
 	    crossorigin="anonymous">
 	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
-	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
-	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+	<!-- <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"> -->
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body id="top">
 	<header class="header">
+		<div class="layer"></div>
 		<canvas id="scene"></canvas>
 		<div class="container">
 			<div class="social-network">
@@ -32,6 +33,7 @@
 					<i class="fab fa-codepen"></i>
 				</a>
 			</div>
+			<img src="./media/avatar_mini.png" alt="Moi" class="myavatar">
 			<div class="container-title">
 				<h1>
 					<div class="firstname">Benoit </div>
@@ -41,8 +43,9 @@
 			</div>
 		</div>
 		<div class="contact-me active-modal cursor-pointer">
-				<span>Contactez moi</span>
-			</div>
+			<span>Contactez moi</span>
+		</div>
+		<!-- <img src="./media/avatar_mini.png" alt="Moi" class="avatar"> -->
 	</header>
 	<!-- <div class="diagonal-shape"></div> -->
 	<div class="projects-list">
@@ -97,9 +100,10 @@
 			<div class="modal-body custom-modal-body">
 				<div class="from-group content">
 					<div class="loader" style="display: none;"></div>
-					<form id="gform" action="https://script.google.com/macros/s/AKfycbzxAZ2QsQd7UwS61LMMeviEEhzGQnC19HdTG7lb50lOXcmIA8M/exec" method="POST">
+					<form id="gform" action="https://script.google.com/macros/s/AKfycbzxAZ2QsQd7UwS61LMMeviEEhzGQnC19HdTG7lb50lOXcmIA8M/exec"
+					    method="POST">
 						<label class="sr-only">Keep this field blank</label>
-  						<input id="honeypot" type="text" name="honeypot" value="" />
+						<input id="honeypot" type="text" name="honeypot" value="" />
 						<input class="form-input" type="email" name="email" placeholder="Votre adresse mail">
 						<textarea name="message" class="form-input" placeholder="Votre message"></textarea>
 						<button type="submit" class="submit-btn form-input">Envoyer</button>

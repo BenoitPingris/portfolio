@@ -1,15 +1,29 @@
+html,
+body {
+	height: 100%;
+	min-height: 100%;
+}
+
 .header {
 	@include linear-gradient(to bottom right, $dark-blue, $light-blue);
-
 	position: relative;
 	color: $white;
-	text-align: center;
-	// background: $light-blue;
+	text-align: center; // background: $light-blue;
 	height: 100vh;
 	width: 100vw;
 	display: table-cell;
 	vertical-align: middle;
-
+	background: url('../assets/paisaje6.jpg');
+	.layer {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		@include linear-gradient(to bottom right,
+		$dark-blue-rgba,
+		$light-blue-rgba);
+	}
 	.container-title {
 		margin: auto;
 		display: inline-block;
@@ -19,18 +33,15 @@
 		background: rgba($color: $dark, $alpha: 0.5);
 		padding: 20px 50px 50px 20px;
 		border-radius: 1px;
-
 		.lastname {
 			text-transform: uppercase;
 			font-family: 'Oswald-regular';
 			font-size: 100px;
 		}
-
 		.firstname {
 			font-family: 'Raleway-regular';
 			font-size: 70px;
 		}
-
 		.status {
 			padding: 10px 0;
 			font-family: 'Raleway-regular';
@@ -39,7 +50,6 @@
 			margin-left: 2px;
 		}
 	}
-
 	.social-network {
 		position: absolute;
 		left: 30px;
@@ -65,7 +75,6 @@
 				font-size: 35px;
 				color: $cold-purple;
 				transition: 0.1s linear;
-
 				&:hover {
 					color: $white;
 					transition: 0.1s linear;
@@ -84,9 +93,10 @@
 }
 
 footer {
-	@include linear-gradient(to top left, $dark-blue, $light-blue);
+	@include linear-gradient(to top left,
+	$dark-blue,
+	$light-blue);
 	padding: 125px 0 200px 0;
-
 	.info-title {
 		color: $white;
 		font-family: 'Raleway-regular';
@@ -109,8 +119,7 @@ footer {
 	border-radius: 2px;
 	width: 60%;
 	margin: 50px auto;
-	transition: transform 0.2s ease;
-	// &:hover {
+	transition: transform 0.2s ease; // &:hover {
 	// 	transform: rotate3d(1, 0, 0, 10deg);
 	// }
 }
@@ -149,27 +158,33 @@ footer {
 }
 
 #honeypot {
-	display: none; /*makes the field not visible to humans*/
+	display: none;
+	/*makes the field not visible to humans*/
 }
 
 .loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
+	border: 16px solid #f3f3f3;
+	/* Light grey */
+	border-top: 16px solid #3498db;
+	/* Blue */
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 #gform {
 	font-family: 'Raleway-regular';
 	text-align: center;
-
 	.submit-btn {
 		// background: $cold-purple;
 		border: 1px solid $cold-purple;
@@ -194,16 +209,39 @@ footer {
 }
 
 .custom-modal-header {
-	@include linear-gradient(to bottom right, $dark-blue, $light-blue);
+	@include linear-gradient(to bottom right,
+	$dark-blue,
+	$light-blue);
 	color: white;
 	width: 100%;
 }
 
-.custom-modal-footer {
-	@include linear-gradient(to top left, $dark-blue, $light-blue);
-	padding: 100px 0;
-}
+// .custom-modal-footer {
+// 	@include linear-gradient(to top left,
+// 	$dark-blue,
+// 	$light-blue);
+// 	padding: 100px 0;
+// }
 
 .modal-container .custom-modal-body {
 	padding: 20px;
+}
+
+.myavatar {
+	position: relative;
+	border-radius: 50%;
+	background: rgb(29,29,152);
+	background: -moz-radial-gradient(circle, rgba(29,29,152,1) 0%, rgba(69,75,102,1) 99%);
+	background: -webkit-radial-gradient(circle, rgba(29,29,152,1) 0%, rgba(69,75,102,1) 99%);
+	background: radial-gradient(circle, rgba(29,29,152,1) 0%, rgba(69,75,102,1) 99%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d1d98",endColorstr="#454b66",GradientType=1);
+	// position: absolute;
+	// top: 5%;
+	// left: 50%;
+	display: block;
+	width: 200px; // margin-left: -100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	height: auto;
 }

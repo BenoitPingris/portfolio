@@ -1,16 +1,17 @@
 @include breakpoint(sm) {
-	.header .social-network {
-		position: unset;
-		margin-bottom: 10px;
-
-		.item-social {
-			display: inline-block;
+	.header {
+		height: 900px;
+		.social-network {
+			position: unset;
+			margin-bottom: 10px;
+			.item-social {
+				display: inline-block;
+			}
 		}
 	}
 	.project {
 		width: 90%;
 	}
-
 	#scene {
 		z-index: -1;
 	}
