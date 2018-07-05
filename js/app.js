@@ -42,4 +42,33 @@ document.addEventListener('DOMContentLoaded', () => {
 			document.getElementById('modal-id').classList.toggle('active');
 		});
 	}
+
+	let lFollowX = 0,
+		lFollowY = 0,
+		x = 0,
+		y = 0
+	const friction = 1 / 30;
+
+	function move_background() {
+		x += (lFollowX - x) * friction;
+		y += (lFollowY - y) * friction;
+
+		const translate = `calc(50% + ${x}px) calc(50% + ${y}px)`;
+
+		const element = document.getElementsByClassName('header')[0];
+		element.style.backgroundPosition = translate;
+
+		window.requestAnimationFrame(move_background);
+	}
+
+
+	document.getElementsByClassName('header')[0].addEventListener('mousemove', (event) => {
+		const lMouseX = Math.max(-200, Math.min(200, window.outerWidth / 2 - event.clientX));
+		const lMouseY = Math.max(-200, Math.min(200, window.outerHeight / 2 - event.clientY));
+		lFollowX = (20 * lMouseX) / 200; // 200 : 12 = lMouxeX : lFollow
+		lFollowY = (10 * lMouseY) / 200;
+
+	});
+
+	move_background();
 });
