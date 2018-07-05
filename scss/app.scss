@@ -30,7 +30,7 @@ body {
 		text-align-last: left;
 		position: relative;
 		z-index: 2;
-		background: rgba($color: $dark, $alpha: 0.5);
+		background: rgba($color: $grey, $alpha: 0.5);
 		padding: 20px 50px 50px 20px;
 		border-radius: 1px;
 		.lastname {
@@ -75,7 +75,7 @@ body {
 			i {
 				padding: 0 5px;
 				font-size: 35px;
-				color: $cold-purple;
+				color: #ffffffb0;
 				transition: 0.1s linear;
 				&:hover {
 					color: $white;
@@ -232,14 +232,7 @@ footer {
 .myavatar {
 	position: relative;
 	border-radius: 50%;
-	background: rgb(29,29,152);
-	background: -moz-radial-gradient(circle, rgba(29,29,152,1) 0%, rgba(69,75,102,1) 99%);
-	background: -webkit-radial-gradient(circle, rgba(29,29,152,1) 0%, rgba(69,75,102,1) 99%);
-	background: radial-gradient(circle, rgba(29,29,152,1) 0%, rgba(69,75,102,1) 99%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d1d98",endColorstr="#454b66",GradientType=1);
-	// position: absolute;
-	// top: 5%;
-	// left: 50%;
+	background: #ffffffb0;
 	display: block;
 	width: 200px; // margin-left: -100px;
 	margin-left: auto;
