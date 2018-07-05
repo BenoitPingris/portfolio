@@ -112,11 +112,16 @@ footer {
 }
 
 .projects-list {
-	padding: 100px 0;
+	.header-projects-list {
+		padding: 25px 0;
+		background-image: linear-gradient(to bottom, $dune, #666, $white, $white, $white);
+		// background: $dune;
+	}
+	// padding: 100px 0;
 }
 
 .project {
-	padding: 50px 0;
+	// padding: 50px 0;
 	border: 1px solid $dark-blue;
 	border-radius: 2px;
 	width: 60%;
@@ -124,6 +129,9 @@ footer {
 	transition: transform 0.2s ease; // &:hover {
 	// 	transform: rotate3d(1, 0, 0, 10deg);
 	// }
+	&:hover {
+		transform: scale(1.05);
+	}
 }
 
 .details {
