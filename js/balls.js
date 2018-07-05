@@ -17,7 +17,7 @@ class Balls {
 		context.globalAlpha = 0.5;
 		context.beginPath();
 		context.fillStyle = this.color;
-		context.arc(this.x, this.y, this.radius, 0, 2*Math.PI);
+		context.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
 		context.fill();
 	}
 
