@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	let lFollowX = 0,
 		lFollowY = 0,
 		x = 0,
-		y = 0
-	const friction = 1 / 30;
+		y = 0;
+	const friction = 1 / 10;
 
 	function move_background() {
 		x += (lFollowX - x) * friction;
@@ -63,10 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 	document.getElementsByClassName('header')[0].addEventListener('mousemove', (event) => {
-		const lMouseX = Math.max(-200, Math.min(200, window.outerWidth / 2 - event.clientX));
-		const lMouseY = Math.max(-200, Math.min(200, window.outerHeight / 2 - event.clientY));
-		lFollowX = (20 * lMouseX) / 200; // 200 : 12 = lMouxeX : lFollow
-		lFollowY = (10 * lMouseY) / 200;
+		const scl = 100;
+		const lMouseX = Math.max(-scl, Math.min(scl, window.outerWidth / 2 - event.clientX));
+		const lMouseY = Math.max(-scl, Math.min(scl, window.outerHeight / 2 - event.clientY));
+		lFollowX = (20 * lMouseX) / scl; // scl : 12 = lMouxeX : lFollow
+		lFollowY = (10 * lMouseY) / scl;
 
 	});
 
