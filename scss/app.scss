@@ -107,16 +107,15 @@ footer {
 }
 
 .title-part {
-	font-family: 'Raleway-regular';
+	margin: 40px auto;
+	font-family: 'Oswald-regular';
 	font-size: 50px;
-	padding: 20px 15px;
+	padding: 15px 10px;
 	text-align: center;
 	color: $dark-blue;
-	max-width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-	text-decoration: underline;
-	text-underline-position: above;
+	max-width: 60%; // background: $dark-blue;
+	position: relative;
+	color: $dark-blue; // clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
 }
 
 .projects-list {
@@ -215,6 +214,8 @@ footer {
 	width: 120px;
 	height: 120px;
 	animation: spin 2s linear infinite;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @keyframes spin {
@@ -395,7 +396,6 @@ footer {
 }
 
 #body {
-	// display: none;
 	height: 0;
 	overflow: hidden;
 	opacity: 0;

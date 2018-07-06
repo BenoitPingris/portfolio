@@ -73,15 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
 }, false);
 
 window.onload = () => {
-	// setTimeout(() => {
-	// const body = document.getElementById('body');
-
-	// document.getElementById('loader').style.display = 'none';
-	// body.style.display = 'block';
-	// body.style.opacity = 1;
-	// body.style.overflow = 'unset';
-	// body.style.height = 'unset';
-	// }, 2000);
 	const body = document.getElementById('body');
 
 	document.getElementById('loader').style.display = 'none';
