@@ -36,7 +36,7 @@ class Balls {
 	}
 }
 
-export class Scene {
+class Scene {
 	constructor(element) {
 		this.element = document.querySelector(element);
 	}

@@ -1,6 +1,6 @@
-import {
-	Scene
-} from './balls.js';
+// import {
+// 	Scene
+// } from './balls.js';
 
 const signature = `
 
