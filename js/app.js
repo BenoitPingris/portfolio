@@ -31,7 +31,6 @@ const signature = `
 
 document.addEventListener('DOMContentLoaded', () => {
 	console.log(signature);
-
 	const scene = new Scene();
 	scene.setup();
 	scene.display();
@@ -61,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		window.requestAnimationFrame(move_background);
 	}
 
-
 	document.getElementsByClassName('header')[0].addEventListener('mousemove', (event) => {
 		const scl = 100;
 		const lMouseX = Math.max(-scl, Math.min(scl, window.outerWidth / 2 - event.clientX));
@@ -72,4 +70,23 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 	move_background();
-});
+}, false);
+
+window.onload = () => {
+	// setTimeout(() => {
+	// const body = document.getElementById('body');
+
+	// document.getElementById('loader').style.display = 'none';
+	// body.style.display = 'block';
+	// body.style.opacity = 1;
+	// body.style.overflow = 'unset';
+	// body.style.height = 'unset';
+	// }, 2000);
+	const body = document.getElementById('body');
+
+	document.getElementById('loader').style.display = 'none';
+	body.style.display = 'block';
+	body.style.opacity = 1;
+	body.style.overflow = 'unset';
+	body.style.height = 'unset';
+};

@@ -14,125 +14,135 @@
 </head>
 
 <body id="top">
-	<header class="header">
-		<canvas id="scene"></canvas>
-		<div class="container">
-			<div class="social-network">
-				<a href="https://github.com/BenoitPingris" class="item-social">
-					<i class="fab fa-github"></i>
-				</a>
-				<a href="https://twitter.com/PiBeben" class="item-social">
-					<i class="fab fa-twitter"></i>
-				</a>
-				<a href="https://www.linkedin.com/in/beno%C3%AEt-pingris-59b714139/" class="item-social">
-					<i class="fab fa-linkedin"></i>
-				</a>
-				<a href="https://codepen.io/Beben/" class="item-social">
-					<i class="fab fa-codepen"></i>
-				</a>
-			</div>
-			<img src="./assets/avatar_mini.png" alt="Moi" class="myavatar">
+	<div id="body">
+		<header class="header">
+			<canvas id="scene"></canvas>
+			<div class="container">
+				<div class="social-network">
+					<a href="https://github.com/BenoitPingris" class="item-social">
+						<i class="fab fa-github"></i>
+					</a>
+					<a href="https://twitter.com/PiBeben" class="item-social">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/beno%C3%AEt-pingris-59b714139/" class="item-social">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="https://codepen.io/Beben/" class="item-social">
+						<i class="fab fa-codepen"></i>
+					</a>
+				</div>
+				<img src="./assets/avatar_mini.png" alt="Moi" class="myavatar">
 
-			<div class="container-title">
-				<h1>
-					<div class="firstname">Benoit </div>
-					<div class="lastname">Pingris</div>
-				</h1>
-				<div class="status">Front-End developer - Paris</div>
+				<div class="container-title">
+					<h1>
+						<div class="firstname">Benoit </div>
+						<div class="lastname">Pingris</div>
+					</h1>
+					<div class="status">Front-End developer - Paris</div>
+				</div>
+			</div>
+			<div class="contact-me active-modal cursor-pointer">
+				<span>Contactez moi</span>
+			</div>
+			<!-- <img src="./assets/avatar_mini.png" alt="Moi" class="avatar"> -->
+		</header>
+		<!-- <div class="diagonal-shape"></div> -->
+		<div class="projects-list">
+			<div class="header-projects-list"></div>
+			<div class="container">
+				<div class="title-part">Projets</div>
+				<div class="project">
+					<a href="https://www.twil.fr/" taget="_blank">
+						<img src="./assets/twil.png" alt="Twil" class="img-responsive img-blur">
+						<div class="banner-project">
+							<div class="content">Twil, acheter du vin en ligne</div>
+						</div>
+					</a>
+				</div>
+				<div class="project">
+					<a href="http://labellecollection.fr/">
+						<img src="./assets/labellecollection.png" alt="La belle collection" class="img-responsive img-blur">
+						<div class="banner-project">
+							<div class="content">labellecollection, maison de vin </div>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
-		<div class="contact-me active-modal cursor-pointer">
-			<span>Contactez moi</span>
-		</div>
-		<!-- <img src="./assets/avatar_mini.png" alt="Moi" class="avatar"> -->
-	</header>
-	<!-- <div class="diagonal-shape"></div> -->
-	<div class="projects-list">
-		<div class="header-projects-list"></div>
 		<div class="container">
-			<div class="title-part">Projets</div>
-			<div class="project">
-				<a href="https://www.twil.fr/" taget="_blank">
-					<img src="./assets/twil.png" alt="Twil" class="img-responsive img-blur">
-					<div class="banner-project">
-						<div class="content">Twil, acheter du vin en ligne</div>
+			<div class="contact"></div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="columns informations">
+					<div class="column col-sm-12 col-6 text-center">
+						<span class="info-title">Coordonnées</span>
+						<ul class="details">
+							<li>
+								<i class="fas fa-phone"></i>&nbsp;&nbsp;06.79.07.68.74</li>
+							<li>
+								<i class="fas fa-envelope"></i>&nbsp;&nbsp;benoit.pingris665@gmail.com</li>
+						</ul>
 					</div>
-				</a>
+					<div class="column col-sm-12 col-6 text-center">
+						<span class="info-title">Contact</span>
+						<div class="contact-container">
+							<span class="active-modal cursor-pointer color-white">Me contacter</span>
+						</div>
+					</div>
+				</div>
+				<div class="copyright text-center color-white">
+					Copyright &copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					Benoit Pingris
+				</div>
 			</div>
-			<div class="project">
-				<a href="http://labellecollection.fr/">
-					<img src="./assets/labellecollection.png" alt="La belle collection" class="img-responsive img-blur">
-					<div class="banner-project">
-						<div class="content">labellecollection, maison de vin </div>
+		</footer>
+		<div class="modal" id="modal-id">
+			<a href="#close" class="modal-overlay active-modal" aria-label="Close"></a>
+			<div class="modal-container">
+				<div class="modal-header custom-modal-header">
+					<a href="#close" class="btn btn-clear float-right active-modal" aria-label="Close"></a>
+					<div class="modal-title h5 oswald-reg color-white" style="font-size: 30px;">Contacter</div>
+				</div>
+				<div class="modal-body custom-modal-body">
+					<div class="from-group content">
+						<div class="loader" style="display: none;"></div>
+						<form id="gform" action="https://script.google.com/macros/s/AKfycbzxAZ2QsQd7UwS61LMMeviEEhzGQnC19HdTG7lb50lOXcmIA8M/exec"
+						    method="POST">
+							<label class="sr-only">Keep this field blank</label>
+							<input id="honeypot" type="text" name="honeypot" value="" />
+							<input class="form-input" type="email" name="email" placeholder="Votre adresse mail">
+							<textarea name="message" class="form-input" placeholder="Votre message"></textarea>
+							<button type="submit" class="submit-btn form-input">Envoyer</button>
+						</form>
+						<div id="thankyou_message" style="display: none;">
+							<div class="text-center raleway-reg" style="font-size: 30px;">Votre message a bien été envoyé !</div>
+							<div class="text-center raleway-reg" style="font-size: 30px;">Merci</div>
+							<!-- <h2 class="text-center"><em>Votre message a bien été envoyé</em></h2> -->
+						</div>
 					</div>
-				</a>
+				</div>
+				<div class="modal-footer custom-modal-footer">
+					<!-- Footer Content -->
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div class="contact"></div>
-	</div>
-	<footer>
-		<div class="container">
-			<div class="columns informations">
-				<div class="column col-sm-12 col-6 text-center">
-					<span class="info-title">Coordonnées</span>
-					<ul class="details">
-						<li>
-							<i class="fas fa-phone"></i>&nbsp;&nbsp;06.79.07.68.74</li>
-						<li>
-							<i class="fas fa-envelope"></i>&nbsp;&nbsp;benoit.pingris665@gmail.com</li>
-					</ul>
-				</div>
-				<div class="column col-sm-12 col-6 text-center">
-					<span class="info-title">Contact</span>
-					<div class="contact-container">
-						<span class="active-modal cursor-pointer color-white">Me contacter</span>
-					</div>
-				</div>
-			</div>
-			<div class="copyright text-center color-white">
-				Copyright &copy;
-				<script>
-					document.write(new Date().getFullYear());
-				</script>
-				Benoit Pingris
-			</div>
-		</div>
-	</footer>
-	<div class="modal" id="modal-id">
-		<a href="#close" class="modal-overlay active-modal" aria-label="Close"></a>
-		<div class="modal-container">
-			<div class="modal-header custom-modal-header">
-				<a href="#close" class="btn btn-clear float-right active-modal" aria-label="Close"></a>
-				<div class="modal-title h5 oswald-reg color-white" style="font-size: 30px;">Contacter</div>
-			</div>
-			<div class="modal-body custom-modal-body">
-				<div class="from-group content">
-					<div class="loader" style="display: none;"></div>
-					<form id="gform" action="https://script.google.com/macros/s/AKfycbzxAZ2QsQd7UwS61LMMeviEEhzGQnC19HdTG7lb50lOXcmIA8M/exec"
-					    method="POST">
-						<label class="sr-only">Keep this field blank</label>
-						<input id="honeypot" type="text" name="honeypot" value="" />
-						<input class="form-input" type="email" name="email" placeholder="Votre adresse mail">
-						<textarea name="message" class="form-input" placeholder="Votre message"></textarea>
-						<button type="submit" class="submit-btn form-input">Envoyer</button>
-					</form>
-					<div id="thankyou_message" style="display: none;">
-						<div class="text-center raleway-reg" style="font-size: 30px;">Votre message a bien été envoyé !</div>
-						<div class="text-center raleway-reg" style="font-size: 30px;">Merci</div>
-						<!-- <h2 class="text-center"><em>Votre message a bien été envoyé</em></h2> -->
-					</div>
-				</div>
-			</div>
-			<div class="modal-footer custom-modal-footer">
-				<!-- Footer Content -->
-			</div>
-		</div>
+	<div id="loader">
+		<div class="sk-cube1 sk-cube"></div>
+		<div class="sk-cube2 sk-cube"></div>
+		<div class="sk-cube4 sk-cube"></div>
+		<div class="sk-cube3 sk-cube"></div>
 	</div>
 	<!-- <div style="display: none;" id="thankyou_message">salut toi</div> -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	    crossorigin="anonymous"></script>
 	<script src="./js/balls.js"></script>
-	<script src="./js/app.js" type="module"></script>
+	<script src="./js/app.js"></script>
 	<script data-cfasync="false" type="text/javascript" src="./js/form-submission-handler.min.js"></script>
 </body>
 
