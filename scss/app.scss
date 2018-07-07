@@ -5,7 +5,7 @@ body {
 }
 
 .header {
-	@include linear-gradient(to bottom right, $dark-blue, $light-blue);
+	// @include linear-gradient(to bottom right, $dark-blue, $light-blue);
 	position: relative;
 	color: $white;
 	text-align: center; // background: $light-blue;
@@ -283,15 +283,6 @@ footer {
 	height: auto;
 	transform: scale(1.1);
 	box-shadow: 0 0 55px rgba($dune, 0.4);
-}
-
-#loader {
-	// position: absolute;
-	// top: 50%;
-	// left: 50%;
-	// background: red;
-	// width: 10px;
-	// height: 10px;
 }
 
 #loader {
